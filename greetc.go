@@ -27,7 +27,7 @@ func randGreet() string {
 
 func Hello(name string) (string, error) {
 	if name == "" {
-		return "", errors.New("Name is emty!")
+		return "", errors.New("Name is empty!")
 	}
 
 	msg := fmt.Sprintf(randGreet(), name)
